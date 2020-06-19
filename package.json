@@ -2,7 +2,7 @@
   "name": "nw-tray-experiment",
   "version": "1.0.0",
   "description": "nw-tray-experiment ==================",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "nw .",
     "test": "echo \"Error: no test specified\" && exit 1"
