@@ -5,6 +5,17 @@
     <h2>Hello World!</h2>
 
     <script>
-        alert("Hello, alert reader!")
+        alert('Create tray?')
+        var tray = new nw.Tray({ title: 'NW Tray', icon: 'icon.png' })
+        var menu = new nw.Menu()
+        menu.append(new nw.MenuItem({ type: 'checkbox', label: 'box1' }))
+        tray.menu = menu
+
+        //  Letting this run now means you'll never see the tray, maybe
+        //  because the application doesn't properly start up before this
+        //  script segment exits.
+        //alert('Remove tray?')
+        //tray.remove()
+        //tray = null
     </script>
 </body></html>
